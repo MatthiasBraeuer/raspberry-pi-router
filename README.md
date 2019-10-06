@@ -1,1 +1,22 @@
 # raspberry-pi-router
+TBD
+
+# Setup
+TBD
+## Install Raspbian
+No matter which transceiver module you use, you have to install *Raspbian* on your *Raspberry Pi*.
+An instruction how to do that can be found [here](https://github.com/RIOT-Makers/wpan-raspbian/wiki/Create-a-generic-Raspbian-image-with-6LoWPAN-support#2-prepare-raspbian-image) and [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
+
+After installing *Raspian* you have to enable the support for IEEE 802.15.4/LoWPAN devices.
+
+Before enabling the support let's connect the transceiver to the *Raspberry Pi* in order to be able to test, if enabling the support was successful. 
+
+## Connect Openlabs (AT86RF233) to Raspberry Pi
+**Note**: Always shutdown the *Raspberry Pi* when you are dis-/connecting hardware from/to the *Raspberry Pi's* GPIOs.
+
+**TODO**: Add image where to plug transceiver into *Raspberry Pi*
+
+### Openlabs (AT86RF233)
+To enable the support for IEEE 802.15.4/LoWPAN devices follow [this](https://github.com/RIOT-Makers/wpan-raspbian/wiki/Create-a-generic-Raspbian-image-with-6LoWPAN-support#33-enable-transceiver).
+
+## TBD (WPan tools) 
