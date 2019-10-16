@@ -4,6 +4,7 @@
 #              https://github.com/RIOT-Makers/wpan-raspbian/wiki/Create-a-generic-Raspbian-image-with-6LoWPAN-support#5-install-wpan-tools-and-configure-6lowpan-devices
 #              (2019-10-16)
 # 
+# License    : MIT
 # Author     : Matthias Bräuer <Matthias.Braeuer@haw-hamburg.de>
 # Date       : 2019-10-16
 #
