@@ -19,4 +19,10 @@ Before enabling the support let's connect the transceiver to the *Raspberry Pi* 
 ### Openlabs (AT86RF233)
 To enable the support for IEEE 802.15.4/LoWPAN devices follow [this](https://github.com/RIOT-Makers/wpan-raspbian/wiki/Create-a-generic-Raspbian-image-with-6LoWPAN-support#33-enable-transceiver).
 
-## TBD (WPan tools) 
+## TBD (WPan tools)
+
+## Install Config Files
+In order to avoid create/adjusting all the config files yourself you can just use the once provided within this repository.
+
+You do not even need to know where to put them, it is all done by [dotbot](https://github.com/anishathalye/dotbot).
+You only need to execute following command in the rrot directory of this project, in order to copy the config files in the right directory: `sudo ./install`
