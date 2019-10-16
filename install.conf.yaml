@@ -1,0 +1,10 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    /etc/dhcpcd.conf: etc/dhcpcd.conf
+    /etc/radvd.conf: etc/radvd.conf
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
