@@ -1,6 +1,11 @@
 - defaults:
     link:
       relink: true
+      force: true
+
+- shell: 
+    -
+      command: cp boot/config.txt /boot/config.txt 
 
 - link:
     /etc/dhcpcd.conf: etc/dhcpcd.conf
@@ -8,7 +13,7 @@
     /etc/dnsmasq.conf: etc/dnsmasq.conf
     /etc/hostapd/hostapd.conf: etc/hostapd/hostapd.conf
     /etc/sysctl.conf: etc/sysctl.conf
-    /boot/config.txt: boot/config.txt
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
