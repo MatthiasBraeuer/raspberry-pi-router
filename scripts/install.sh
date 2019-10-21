@@ -8,7 +8,14 @@
 # Author     : Matthias Bräuer <Matthias.Braeuer@haw-hamburg.de>
 # Date       : 2019-10-16
 #
-#==============================================================================
+#======================================================================================================================
+
+# Downgrade Raspbian to kernel version 4.9.x, so that 6LoWPAN works properly.
+#
+# See: https://github.com/raspberrypi/linux/issues/2493#issuecomment-381648977 (2019-10-21)
+# See: https://github.com/Hexxeh/rpi-firmware/commits/master (2019-10-21)
+# See: https://forum-raspberrypi.de/forum/thread/21114-firmware-u-kernel-downgrade-mit-rpi-update/ (2019-10-21)
+sudo rpi-update 936a8dc3a605c20058fbb23672d6b47bca77b0d5
 
 # Useful when using the terminal
 sudo apt install vim screen htop cmake
@@ -24,4 +31,7 @@ sudo apt install virtualenv python-all-dev python-pip python3-pip
 
 # Setup Raspberry Pi as wifi hotspot
 ./setup-wifi-hotspot.sh
+
+# Install radvd (a router advertisment router) in order to assign ip addresses automatically
+sudo apt-get install radvd
 
