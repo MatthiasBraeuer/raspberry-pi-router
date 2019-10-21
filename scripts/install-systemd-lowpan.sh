@@ -1,4 +1,4 @@
-#==============================================================================
+#!/usr/bin/env sh
 #
 # Description : Install the systemd lowpan tool in order to set
 #               up the lowpan device automatically on startup.

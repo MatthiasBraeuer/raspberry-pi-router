@@ -1,4 +1,4 @@
-#==============================================================================
+#!/usr/bin/env sh
 #
 # Description: Setup the Raspberry Pi as a Wifi hotspot.
 #              See https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
