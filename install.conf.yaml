@@ -6,10 +6,9 @@
 - shell: 
     -
       command: cp boot/config.txt /boot/config.txt 
-
+      command: cp etc/radvd.conf /etc/radvd.conf
 - link:
     /etc/dhcpcd.conf: etc/dhcpcd.conf
-    /etc/radvd.conf: etc/radvd.conf
     /etc/dnsmasq.conf: etc/dnsmasq.conf
     /etc/hostapd/hostapd.conf: etc/hostapd/hostapd.conf
     /etc/sysctl.conf: etc/sysctl.conf
