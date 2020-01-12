@@ -32,6 +32,11 @@ sudo apt install virtualenv python-all-dev python-pip python3-pip
 # Setup Raspberry Pi as wifi hotspot
 ./setup-wifi-hotspot.sh
 
+# Install aiocoap resource directory and coap client
+# See: https://github.com/chrysn/aiocoap
+git clone https://github.com/chrysn/aiocoap
+cd aiocoap && pip3 install --upgrade ".[all]"
+
 # Install radvd (a router advertisment router) in order to assign ip addresses automatically
 sudo apt-get install radvd
 
