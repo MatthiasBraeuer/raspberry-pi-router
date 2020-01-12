@@ -29,3 +29,12 @@ You do not even need to know where to put them, it is all done by [dotbot](https
 You only need to execute following command in the root directory of this project, in order to copy the config files in the right directory: `sudo ./install`
 
 **Note**: Be aware that there is a default password for the wlan hotspot in `etc/hostapd/hostapd.conf`-> Adjust the config file
+
+# Known Issues
+## Wifi and Radvd
+1.  The Raspberry Pi does not get a global IPv6 address assigned by Radvd (this might be possible, but is not configured) ->     
+    Add an IPv6 address by executing `sudo ip -6 addr add fd51:42f8:caae:d922::1/64 dev wlan0`
+2.  When an `esp` connects with the Raspberry Pi via Wifi, no global IPv6 address is assigned automatically -> To trigger 
+    assignment just remove the Pi's global IPv6 by executing `sudo ip -6 addr del fd51:42f8:caae:d922::1/64 dev wlan0` and 
+    the readd it by executing `sudo ip -6 addr add fd51:42f8:caae:d922::1/64 dev wlan0` (the interface `wlan0` might be named 
+    differently. check that with `ip link`).
